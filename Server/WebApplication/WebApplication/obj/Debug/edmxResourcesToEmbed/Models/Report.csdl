@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="reportOrder" ReturnType="Collection(Model.reportOrder_Result)">
+      <Parameter Name="id_ordersss" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="reportOrder_Result">
+    <Property Type="String" Name="title" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="title1" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="detail" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="price" Nullable="false" />
+    <Property Type="Int32" Name="quantity" Nullable="false" />
+  </ComplexType>
+</Schema>

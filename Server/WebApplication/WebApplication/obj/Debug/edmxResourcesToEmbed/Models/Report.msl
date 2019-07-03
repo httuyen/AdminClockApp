@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <FunctionImportMapping FunctionImportName="reportOrder" FunctionName="Model.Store.reportOrder">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Model.reportOrder_Result">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="title1" ColumnName="title1" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
